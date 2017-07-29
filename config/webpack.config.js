@@ -38,9 +38,9 @@ var config = {
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: "url?limit=10000&mimetype=image/svg+xml"
-      },
+      }
     ]
-  }
+  },
 
   output: {
     // Build assets directly in to public/webpack/, let webpack know
