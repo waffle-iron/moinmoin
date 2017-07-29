@@ -12,3 +12,6 @@
 //
 //= require rails-ujs
 //= require_tree .
+// require ("application.css");
+// require("bootstrap/dist/css/bootstrap.css");
+// console.log("Hello world!");
