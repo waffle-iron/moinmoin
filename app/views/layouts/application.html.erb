@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Moinmoin</title>
+    <title>Tilia</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag *webpack_asset_paths("application") %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="container">
+    <div class="site">
+
+      div.site
+      <%= yield %>
+
+      <header class="masthead">header.masthead
+        <% if notice.present? %>
+          <aside class="alert alert-info">
+            <%= notice %>
+          </aside>
+        <% end %>
+        <% if alert.present? %>
+          <aside class="alert alert-danger">
+            <%= alert %>
+          </aside>
+        <% end %>
+      </header>
+
+      <h1 class="page-title">h1.page-title</h1>
+
+      <main class="main-content">main.main-content</main>
+
+      <aside class="sidebar">aside.sidebar</aside>
+
+      <footer class="footer">
+        footer.footer
+
+        <p>
+          <%= render "devise/shared/links" %>
+        </p>
+      </footer>
+
+    </div> <!-- .site -->
   </body>
 </html>

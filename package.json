@@ -1,5 +1,21 @@
 {
-  "name": "moinmoin",
-  "private": true,
-  "dependencies": {}
+  "name": "webpack-rails-example",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "stats-webpack-plugin": "^0.4.3",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "bootstrap": "3.3.7",
+    "raw-loader": "0.5.1"
+  },
+  "devDependencies": {
+    "jasmine": "2.4.0",
+    "jasmine-node": "1.11.0",
+    "testdouble": "1.6.0"
+  }
 }
